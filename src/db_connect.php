@@ -4,7 +4,7 @@
 $host = getenv('DB_HOST') ?: 'mysql-1a8af744-huynhhuyy9c-b49b.e.aivencloud.com';
 $port = getenv('DB_PORT') ?: '18393';
 $user = getenv('DB_USER') ?: 'avnadmin';
-$pass = getenv('DB_PASS') ?: 'AVNS_LnLNGqCBvCwutyF5X4j';
+$pass = getenv('DB_PASS') ?: '';
 $dbname = getenv('DB_NAME') ?: 'defaultdb';
 
 // Tạo kết nối tới Aiven MySQL
