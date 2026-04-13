@@ -10,12 +10,13 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // 2. KẾT NỐI DATABASE (ĐÃ SỬA TÊN DB CHUẨN THEO ẢNH CỦA BẠN)
-$host = "localhost";
-$user_db = "root";
-$pass_db = "";
-$name_db = "db_ban_laptop"; // <--- Đã sửa từ 'web_ban_laptop' thành 'db_ban_laptop'
+$host = getenv('DB_HOST') ?: 'mysql-1a8af744-huynhhuyy9c-b49b.e.aivencloud.com';
+$port = getenv('DB_PORT') ?: '18393';
+$user = getenv('DB_USER') ?: 'avnadmin';
+$pass = getenv('DB_PASS') ?: 'AVNS_LnLNGqCBvCwutyF5X4j';
+$dbname = getenv('DB_NAME') ?: 'defaultdb';
 
-$conn = mysqli_connect('db', 'laptop_user', 'userpassword', 'laptop_store');
+$conn = mysqli_connect($host, $user, $pass, $dbname, $port);
 
 if (!$conn) {
     die("Lỗi kết nối Database: " . mysqli_connect_error());
