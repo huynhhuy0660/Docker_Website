@@ -1,11 +1,11 @@
-# Bỏ qua thư mục chứa thư viện (nếu bạn dùng Composer cho PHP)
+# Bỏ qua thư mục chứa thư viện 
 /src/vendor/
 
 # Bỏ qua các file cấu hình hệ thống của hệ điều hành
 .DS_Store
 Thumbs.db
 
-# Bỏ qua các file môi trường chứa thông tin nhạy cảm (nếu có)
+# Bỏ qua các file môi trường chứa thông tin nhạy cảm 
 .env
 .env.local
 
@@ -14,7 +14,5 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# (Tùy chọn) Bỏ qua thư mục hình ảnh nếu bạn có quá nhiều ảnh nặng, 
-# nhưng thường đồ án thì cứ để hình ảnh mẫu lên cho đầy đủ.
+#Bỏ qua thư mục hình ảnh nếu bạn có quá nhiều ảnh nặng
 # /src/images/
